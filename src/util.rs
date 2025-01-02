@@ -22,6 +22,8 @@ THE SOFTWARE.
 
 //! Some programming utilities
 
+use crate::math::RsMath;
+
 /// Returns a float rounded upto a certain number of decimal digits
 #[inline]
 pub fn round_upto_digits(float: f64, decimal_digits: u32) -> f64

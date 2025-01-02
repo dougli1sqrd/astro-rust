@@ -22,7 +22,8 @@ THE SOFTWARE.
 
 //! Binary stars
 
-use angle;
+use crate::math::RsMath;
+use crate::angle;
 
 /**
 Computes mean annual motion of companion star

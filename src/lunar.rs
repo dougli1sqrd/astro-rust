@@ -22,9 +22,10 @@ THE SOFTWARE.
 
 //! The Earth's moon
 
-use angle;
-use coords;
-use time;
+use crate::angle;
+use crate::coords;
+use crate::time;
+use crate::math::RsMath;
 
 /**
 Computes the equatorial horizontal parallax of the Moon

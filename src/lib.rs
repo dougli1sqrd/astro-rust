@@ -22,6 +22,9 @@ THE SOFTWARE.
 
 #![allow(non_snake_case)]
 #![allow(non_camel_case_types)]
+#![cfg_attr(not(test), no_std)]
+
+extern crate alloc;
 
 #[macro_use]
 pub mod util;
@@ -48,3 +51,4 @@ pub mod star;
 pub mod sun;
 pub mod time;
 pub mod transit;
+mod math;

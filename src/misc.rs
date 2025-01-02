@@ -22,6 +22,8 @@ THE SOFTWARE.
 
 //! Miscellaneous routines
 
+use crate::math::RsMath;
+
 /**
 Computes the parallactic angle of a celestial body
 

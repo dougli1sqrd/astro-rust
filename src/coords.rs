@@ -22,7 +22,8 @@ THE SOFTWARE.
 
 //! Transform between coordinate systems
 
-use angle;
+use crate::math::RsMath;
+use crate::angle;
 
 /// Represents a point on the geographical surface of the Earth
 #[derive(Debug)]

@@ -22,8 +22,9 @@ THE SOFTWARE.
 
 //! Elliptic orbits
 
-use orbit;
-use std::f64::consts::PI;
+use crate::orbit;
+use core::f64::consts::PI;
+use crate::math::RsMath;
 
 /**
 Computes the true anomaly of a body in an elliptic orbit

@@ -22,6 +22,8 @@ THE SOFTWARE.
 
 //! Diameters of asteroids
 
+use crate::math::RsMath;
+
 /**
 Computes the diameter of an asteroid
 

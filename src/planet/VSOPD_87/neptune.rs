@@ -1,3 +1,6 @@
+use alloc::vec;
+use alloc::vec::Vec;
+
 #[inline(always)]
 pub fn terms() -> Vec<Vec<Vec<[f64; 3]>>> {
     vec![

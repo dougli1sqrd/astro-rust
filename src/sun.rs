@@ -22,11 +22,11 @@ THE SOFTWARE.
 
 //! The Sun
 
-use angle;
-use time;
-use std;
-use planet;
-use coords;
+use crate::angle;
+use crate::time;
+use crate::planet;
+use crate::coords;
+use crate::math::RsMath;
 
 /**
 Computes the Sun's equatorial semidiameter
@@ -62,7 +62,7 @@ pub fn geocent_ecl_pos(JD: f64) -> (coords::EclPoint, f64) {
     let (L, B, R) = planet::heliocent_coords(&planet::Planet::Earth, JD);
 
     let ecl_point = coords::EclPoint {
-        long: angle::limit_to_two_PI(L + std::f64::consts::PI),
+        long: angle::limit_to_two_PI(L + core::f64::consts::PI),
         lat:  angle::limit_to_two_PI(-B)
     };
 
@@ -229,7 +229,7 @@ pub fn ephemeris (
 #[inline]
 fn magnitude_limited_to_less_than_PI(a: f64) -> f64 {
 
-    let PI_INTO_THREE_BY_TWO = std::f64::consts::PI * 3.0/2.0;
+    let PI_INTO_THREE_BY_TWO = core::f64::consts::PI * 3.0/2.0;
 
     if a > PI_INTO_THREE_BY_TWO { a - angle::TWO_PI }
     else                        { a }

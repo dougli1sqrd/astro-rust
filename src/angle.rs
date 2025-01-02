@@ -22,9 +22,10 @@ THE SOFTWARE.
 
 //! Angles for astronomy
 
-use std;
+use crate::math::RsMath;
 
-pub const TWO_PI: f64 = 2.0 * std::f64::consts::PI;
+
+pub const TWO_PI: f64 = 2.0 * core::f64::consts::PI;
 
 /**
 Computes the angular separation between two angular points

@@ -22,6 +22,8 @@ THE SOFTWARE.
 
 //! Stars
 
+use crate::math::RsMath;
+
 /**
 Computes the combined magnitude of two stars
 

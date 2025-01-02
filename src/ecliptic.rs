@@ -22,9 +22,10 @@ THE SOFTWARE.
 
 //! The Earth's ecliptic
 
-use angle;
-use std::f64::consts::PI;
-use time;
+use crate::angle;
+use core::f64::consts::PI;
+use crate::time;
+use crate::math::RsMath;
 
 /**
 Computes the mean obliquity of the ecliptic using

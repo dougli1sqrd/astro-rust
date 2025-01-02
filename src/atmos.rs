@@ -22,8 +22,9 @@ THE SOFTWARE.
 
 //! Corrections for atmospheric refraction
 
-use angle;
-use std::f64::consts::PI;
+use crate::math::RsMath;
+use crate::angle;
+use core::f64::consts::PI;
 
 /**
 Computes the refraction term for true altitudes greater than 15

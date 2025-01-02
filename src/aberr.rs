@@ -22,9 +22,11 @@ THE SOFTWARE.
 
 //! Corrections for aberration
 
-use angle;
-use time;
-use coords;
+use crate::angle;
+use crate::time;
+use crate::coords;
+
+use crate::math::RsMath;
 
 /**
 Computes solar aberration in ecliptic longitude

@@ -30,6 +30,8 @@ and IV is Callisto. That mapping is used.
 
 */
 
+use crate::math::RsMath;
+
 /// Represents a Galilean moon
 pub enum Moon {
     /// Io

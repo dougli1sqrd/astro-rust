@@ -22,8 +22,9 @@ THE SOFTWARE.
 
 //! The dwarf planet Pluto
 
-use angle;
-use time;
+use crate::angle;
+use crate::time;
+use crate::math::RsMath;
 
 /**
 Computes the geocentric equatorial semidiameter of Pluto

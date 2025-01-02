@@ -22,8 +22,8 @@ THE SOFTWARE.
 
 //! Parabolic orbits
 
-use std;
-use orbit;
+use crate::orbit;
+use crate::math::RsMath;
 
 /**
 Computes the true anomaly and radius vector of a body in a parabolic
@@ -88,7 +88,7 @@ pub fn passage_through_node (
 
     match *node {
         orbit::Node::Ascend  => pass_through_node(-w, q, T),
-        orbit::Node::Descend => pass_through_node(std::f64::consts::PI - w, q, T)
+        orbit::Node::Descend => pass_through_node(core::f64::consts::PI - w, q, T)
     }
 
 }

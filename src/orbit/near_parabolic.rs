@@ -22,8 +22,9 @@ THE SOFTWARE.
 
 //! Near-parabolic orbits
 
-use angle;
-use consts;
+use crate::angle;
+use crate::consts;
+use crate::math::RsMath;
 
 /**
 Computes the true anomaly and radius vector of a body in a near-parabolic

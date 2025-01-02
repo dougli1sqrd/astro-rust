@@ -22,9 +22,9 @@ THE SOFTWARE.
 
 //! Corrections for precession
 
-use angle;
-use std;
-use time;
+use crate::angle;
+use crate::time;
+use crate::math::RsMath;
 
 /**
 Computes annual precession in equatorial coordinates towards a new
@@ -322,7 +322,7 @@ pub fn precess_orb_elements(old_inc: f64,
 
     if old_inc == 0.0 {
         new_inc = nu;
-        new_long_ascend_node = phi + std::f64::consts::PI;
+        new_long_ascend_node = phi + core::f64::consts::PI;
     } else {
         let A = old_inc.sin() * (old_long_ascend_node - Pi).sin();
 

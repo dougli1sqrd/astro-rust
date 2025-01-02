@@ -22,7 +22,8 @@ THE SOFTWARE.
 
 //! Saturn
 
-use angle;
+use crate::angle;
+use crate::math::RsMath;
 
 pub mod moon;
 pub mod ring;
